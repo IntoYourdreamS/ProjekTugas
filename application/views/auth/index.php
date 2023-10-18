@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login</title>
+	<title><?= $title; ?></title>
 
 	<!-- Google Font: Source Sans Pro -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -16,11 +16,8 @@
 	<link rel="stylesheet" href="<?= base_url('assets') ?>/dist/css/adminlte.min.css">
 </head>
 
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-color:darkgray">
 	<div class="login-box">
-		<div class="login-logo">
-			<b>Surat Ijin Mengemudi</b>
-		</div>
 		<!-- /.login-logo -->
 		<div class="card">
 			<div class="card-body login-card-body">
@@ -48,7 +45,8 @@
 						</div>
 						<!-- /.col -->
 						<div class="col-4">
-							<button type="submit" name="login" class="btn btn-primary btn-block">Sign In</button>
+							<!-- <button type="submit" name="login" class="btn btn-primary btn-block">Sign In</button> -->
+                            <a class="btn btn-primary" href="<?= base_url('dashboard'); ?>">LOGIN</a>
 						</div>
 						<!-- /.col -->
 					</div>
