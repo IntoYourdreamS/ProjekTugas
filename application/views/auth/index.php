@@ -25,7 +25,7 @@
 
 				<form action="<?= site_url('auth/process') ?>/index3.html" method="post">
 					<div class="input-group mb-3">
-						<input type="text" class="form-control" placeholder="username" name="username">
+						<input type="text" class="form-control" placeholder="username / email" name="username">
 						<div class="input-group-append">
 							<div class="input-group-text">
 								<span class="fas fa-envelope"></span>
