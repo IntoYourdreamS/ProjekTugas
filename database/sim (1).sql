@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `jurusan` (
   `wali_kelas` varchar(50) NOT NULL,
   `deskripsi` varchar(100) NOT NULL,
   PRIMARY KEY (`id_jurusan`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `pegawai` (
   `agama` varchar(50) NOT NULL,
   `status_pegawai` varchar(50) NOT NULL,
   PRIMARY KEY (`id_pegawai`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `pendukung` (
   `ktp` varchar(50) NOT NULL,
   `kk` varchar(50) NOT NULL,
   PRIMARY KEY (`id_pendukung`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `siswa` (
   `provensi` varchar(50) NOT NULL,
   `kode_pos` int NOT NULL,
   PRIMARY KEY (`id_siswa`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `level` varchar(11) NOT NULL,
   `id_siswa` int NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data untuk tabel `user`
@@ -139,7 +139,7 @@ CREATE TABLE IF NOT EXISTS `wali` (
   `nomer_hp` int NOT NULL,
   `agama` varchar(50) NOT NULL,
   PRIMARY KEY (`id_wali`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
