@@ -8,19 +8,19 @@
     <title>Fusion - Bootstrap 4 Template</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="<?= base_url('assets/');?>css/bootstrap.min.css" >
     <!-- Icon -->
-    <link rel="stylesheet" href="assets/fonts/line-icons.css">
+    <link rel="stylesheet" href="<?= base_url('assets/');?>fonts/line-icons.css">
     <!-- Owl carousel -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="<?= base_url('assets/');?>css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/');?>css/owl.theme.css">
     
     <!-- Animate -->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="<?= base_url('assets/');?>css/animate.css">
     <!-- Main Style -->
-    <link rel="stylesheet" href="assets//css/main.css">
+    <link rel="stylesheet" href="<?= base_url('assets/');?>/css/main.css">
     <!-- Responsive Style -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="<?= base_url('assets/');?>css/responsive.css">
 
   </head>
   <body>
