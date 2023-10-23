@@ -18,7 +18,7 @@
     <!-- Animate -->
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/animate.css">
     <!-- Main Style -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/responsive.css">
 
@@ -58,13 +58,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testimonial">
-                  Testimonial
+                <a class="nav-link" href="#contact">
+                  Contact
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                  Contact
+                <a class="nav-link" href="<?= base_url('auth'); ?>">
+                  Login
                 </a>
               </li>
             </ul>
