@@ -18,7 +18,7 @@
     <!-- Animate -->
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Main Style -->
-    <link rel="stylesheet" href="<?= base_url('assets');?>/css/main.css">
+    <link rel="stylesheet" href="assets//css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
