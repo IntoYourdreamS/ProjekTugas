@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>SIM PEPENG</title>
+    <title>Fusion - Bootstrap 4 Template</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/bootstrap.min.css" >
@@ -18,7 +18,7 @@
     <!-- Animate -->
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/animate.css">
     <!-- Main Style -->
-    <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/responsive.css">
 
@@ -65,11 +65,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">
                   Contact
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('auth'); ?>">
-                  Login
                 </a>
               </li>
             </ul>
@@ -721,17 +716,17 @@
     <!-- End Preloader -->
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="<?= base_url('assets/'); ?>js/jquery-min.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/popper.min.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/bootstrap.min.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/owl.carousel.min.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/wow.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/jquery.nav.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/scrolling-nav.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/jquery.easing.min.js"></script>  
-    <script src="<?= base_url('assets/'); ?>js/main.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/form-validator.min.js"></script>
-    <script src="<?= base_url('assets/'); ?>js/contact-form-script.min.js"></script>
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>  
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
       
   </body>
 </html>
