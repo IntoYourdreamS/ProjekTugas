@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `jurusan` (
   `kode_kelas` varchar(50) NOT NULL,
   `wali_kelas` varchar(50) NOT NULL,
   PRIMARY KEY (`id_jurusan`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `pegawai` (
   `agama` varchar(50) NOT NULL,
   `status_perkawinan` varchar(50) NOT NULL,
   PRIMARY KEY (`id_pegawai`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `siswa` (
   `foto_ktp` varchar(50) NOT NULL,
   `foto_kk` varchar(50) NOT NULL,
   PRIMARY KEY (`id_siswa`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `role_id` int NOT NULL,
   `id_siswa` int NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
