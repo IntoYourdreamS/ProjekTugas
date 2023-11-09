@@ -43,7 +43,7 @@
                                 <td><?= $i; ?></td>
                                 <td><?= $s['no_induk']; ?></td>
                                 <td><?= $s['nama_siswa']; ?></td>
-                                <td><?= $s['id_jurusan']; ?></td>
+                                <td><?= $s['jurusan']; ?></td>
                                 <td><?= $s['jk']; ?></td>
                                 <td>
                                     <a href="" class="btn btn-warning btn-sm">
