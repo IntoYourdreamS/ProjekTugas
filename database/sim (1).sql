@@ -15,7 +15,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `sim`
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `jurusan` (
   `deskripsi` text NOT NULL,
   `kaproli` varchar(50) NOT NULL,
   PRIMARY KEY (`id_jurusan`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `kelas` (
   `nama_kelas` varchar(10) NOT NULL,
   `wali_kelas` varchar(25) NOT NULL,
   PRIMARY KEY (`id_kelas`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -59,13 +59,13 @@ CREATE TABLE IF NOT EXISTS `kelas` (
 DROP TABLE IF EXISTS `pegawai`;
 CREATE TABLE IF NOT EXISTS `pegawai` (
   `id_pegawai` int NOT NULL AUTO_INCREMENT,
-  `nama_pegawai` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `tempat _lahir_pegawai` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `nama_pegawai` varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `tempat _lahir_pegawai` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `tanggal_lahir_pegawai` date NOT NULL,
-  `agama` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `status_perkawinan` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `agama` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `status_perkawinan` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id_pegawai`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -77,51 +77,51 @@ DROP TABLE IF EXISTS `siswa`;
 CREATE TABLE IF NOT EXISTS `siswa` (
   `id_siswa` int NOT NULL AUTO_INCREMENT,
   `nama_siswa` varchar(50) NOT NULL,
-  `jk` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `jk` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `id_kelas` int NOT NULL,
   `id_jurusan` int NOT NULL,
   `nisn` int NOT NULL,
   `nik` int NOT NULL,
-  `tempat _lahir` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `tempat _lahir` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `tanggal_lahir` date NOT NULL,
-  `agama` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `warganegara` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `agama` varchar(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `warganegara` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `alamat` varchar(50) NOT NULL,
-  `rt` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `rt` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `rw` varchar(10) NOT NULL,
-  `kelurahan` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `kecamatan` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `kabupaten` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `provinsi` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `kelurahan` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `kecamatan` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `kabupaten` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `provinsi` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `kode_pos` int NOT NULL,
-  `nama_ayah` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `tempat_lahir_ayah` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `nama_ayah` varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `tempat_lahir_ayah` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `tanggal_lahir_ayah` date NOT NULL,
-  `pendidikan_ayah` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `pekerjaan_ayah` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `gaji_ayah` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `pendidikan_ayah` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `pekerjaan_ayah` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `gaji_ayah` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `no_hp_ayah` int NOT NULL,
-  `agama_ayah` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `nama_ibu` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `tempat_lahir_ibu` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `agama_ayah` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `nama_ibu` varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `tempat_lahir_ibu` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `tanggal_lahir_ibu` date NOT NULL,
-  `pendidikan_ibu` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `pekerjaan_ibu` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `gaji_ibu` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `pendidikan_ibu` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `pekerjaan_ibu` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `gaji_ibu` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `no_hp_ibu` int NOT NULL,
-  `agama_ibu` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `nama_wali` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `tempat_lahir_wali` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `agama_ibu` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `nama_wali` varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `tempat_lahir_wali` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `tanggal_lahir_wali` date NOT NULL,
-  `pendidikan_wali` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `pekerjaan_wali` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `gaji_wali` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `pendidikan_wali` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `pekerjaan_wali` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `gaji_wali` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `no_hp_wali` int NOT NULL,
-  `agama_wali` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `foto_pribadi` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `agama_wali` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `foto_pribadi` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `foto_kk` varchar(50) NOT NULL,
   PRIMARY KEY (`id_siswa`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -138,7 +138,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `role_id` int NOT NULL,
   `id_siswa` int NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -13,12 +13,11 @@ class Siswa extends CI_Controller
         $this->form_validation->set_rules('jk', 'required');
         $this->form_validation->set_rules('jurusan', 'required');
         $this->form_validation->set_rules('no_induk', 'required');
-        $this->form_validation->set_rules('jam', 'required');
-        $this->form_validation->set_rules('jam', 'required');
-        $this->form_validation->set_rules('jam', 'required');
-        $this->form_validation->set_rules('jam', 'required');
-        $this->form_validation->set_rules('jam', 'required');
-        $this->form_validation->set_rules('jam', 'required');
+        $this->form_validation->set_rules('nik', 'required');
+        $this->form_validation->set_rules('ttl', 'required');
+        $this->form_validation->set_rules('agama', 'required');
+        $this->form_validation->set_rules('warganegara', 'required');
+        $this->form_validation->set_rules('rt_rw', 'required');
         $this->form_validation->set_rules('jam', 'required');
         $this->form_validation->set_rules('jam', 'required');
         $this->form_validation->set_rules('jam', 'required');
